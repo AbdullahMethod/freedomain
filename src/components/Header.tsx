@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Globe className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">DomainHub</span>
+            <span className="text-2xl font-bold text-foreground">Free Domnain</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
