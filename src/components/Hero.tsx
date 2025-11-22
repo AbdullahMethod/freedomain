@@ -40,15 +40,15 @@ const Hero = () => {
     // Mock different responses based on domain name
     const isAvailable = !['admin', 'www', 'api', 'mail', 'support'].includes(domainName.toLowerCase());
     const mockResult = {
-      domain: `${domainName}.domainhub.dev`,
+      domain: `${domainName}.abdullah.nyc.mn`,
       available: isAvailable,
       price: isAvailable ? "Free" : "Unavailable",
       whois: {
-        registrar: isAvailable ? "Available for registration" : "DomainHub Registry",
+        registrar: isAvailable ? "Available for registration" : "Free Domain Registry",
         created: isAvailable ? null : "2023-01-15",
         expires: isAvailable ? null : "2025-01-15",
         status: isAvailable ? "Available" : "Registered",
-        nameservers: isAvailable ? [] : ["ns1.domainhub.dev", "ns2.domainhub.dev"]
+        nameservers: isAvailable ? [] : ["ns1.abdullah.nyc.mn", "ns2.abdullah.nyc.mnv"]
       }
     };
 
@@ -58,12 +58,12 @@ const Hero = () => {
     if (isAvailable) {
       toast({
         title: "Domain Available! 🎉",
-        description: `${domainName}.domainhub.dev is ready to register for free!`,
+        description: `${domainName}.abdullah.nyc.mn is ready to register for free!`,
       });
     } else {
       toast({
         title: "Domain Taken",
-        description: `${domainName}.domainhub.dev is already registered.`,
+        description: `${domainName}.abdullah.nyc.mn is already registered.`,
         variant: "destructive",
       });
     }
@@ -77,7 +77,7 @@ const Hero = () => {
   const registerDomain = () => {
     toast({
       title: "Registration Started! 🚀",
-      description: `Starting registration process for ${domain}.domainhub.dev`,
+      description: `Starting registration process for ${domain}.abdullah.nyc.mn`,
     });
     // In real app, this would redirect to registration form
   };
@@ -86,9 +86,10 @@ const Hero = () => {
     <section className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-          DomainHub Subdomain Service
+          FreeDomain Subdomain Service
         </h1>
-        
+
+      
         <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
           Claim your free, permanent subdomain. Perfect for personal projects, portfolios, and 
           development. Subdomains with 6+ characters are free!
@@ -107,7 +108,7 @@ const Hero = () => {
                   disabled={isChecking}
                 />
                 <span className="text-muted-foreground text-lg font-medium px-3">
-                  .domainhub.dev
+                  .abdullah.nyc.mn
                 </span>
               </div>
               
@@ -212,7 +213,7 @@ const Hero = () => {
                             checkDomain(suggestion);
                           }}
                         >
-                          {suggestion}.domainhub.dev
+                          {suggestion}.abdullah.nyc.mn
                         </Button>
                       ))}
                     </div>
