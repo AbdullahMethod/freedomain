@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Globe className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-foreground">DomainHub</span>
+              <span className="text-2xl font-bold text-foreground">FreeDomain</span>
             </div>
             <p className="text-muted-foreground">
               The most trusted platform for free subdomains, helping developers build amazing projects.
@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground">
-            © 2024 DomainHub. All rights reserved.
+            © 2026 freeDomain. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
