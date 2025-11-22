@@ -88,7 +88,7 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-2">
                   Get support via email within 24 hours
                 </p>
-                <a href="mailto:support@domainhub.dev" className="text-primary hover:underline">
+                <a href="mailto:theabdullahbinshahid@gmail.com" className="text-primary hover:underline">
                   support@domainhub.dev
                 </a>
               </div>
